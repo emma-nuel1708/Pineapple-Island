@@ -858,7 +858,7 @@ footer {
     display: none;
   }
   .mobile-navlinks {
-    display: none;
+    display: flex;
   }
   .mobile-navlinks a {
     margin-bottom: 40px;
@@ -878,6 +878,7 @@ footer {
 
   .hero-section {
     margin: 0 auto 56px;
+
   }
   .hero-text {
     position: absolute;
