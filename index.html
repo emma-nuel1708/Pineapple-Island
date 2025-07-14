@@ -1,325 +1,443 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Pineapple Island</title>
-      <link rel="stylesheet" href="style.css"> 
-      <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <header>
-            <section class="header">
-                <a href="index.html" class="logo">
-                 <img src="./images/Pineapple Island-logo.svg" alt="">
-                </a>
-                <nav class="navlinks">
-                 <a href="#">About Us</a>
-                 <a href="#">What we do</a>
-                 <a href="#">Project</a>
-                </nav>
-                <nav class="mobile-navlinks">
-                 <a href="#">About Us</a>
-                 <a href="#">What we do</a>
-                 <a href="#">Project</a>
-                </nav>
-                <a href="#" class="hamburger">
-                  <img src="./images/hamburger.svg" alt="">
-                </a>
-                <div class="get-in-touch">
-                 <a href="#">Get in Touch</a>
-                </div>
-            </section>
-      </header>
-      <main>
-        <section class="hero-section">
-          <div class="hero-background"></div>
-            <div class="hero-text">
-                <h1>Pineapple Island: GenZ and Millenial Abode</h1>
-                <p>a community that gives you a taste of happiness, a place you’ll love to live and an opportunity to build a home.</p>
-                <div class="mobile-get-in-touch">
-                  <a href="#">Get in Touch</a>
-                 </div>
-            </div>
-            <div class="hero-image">
-                <img src="./images/unsplash_Hero.png" alt="">
-            </div>
-            <div class="mobile-hero-image">
-              <img src="./images/mobile-hero-image.png" alt="">
-            </div>
-        </section>
-
-
-        <!-- About Section -->
-
-        <section class="about">
-            <div class="about-text">
-                <h1>About<br/> Pineapple Island</h1>
-            </div>
-            <div class="about-image">
-                <div class="image">
-                    <img src="./images/unsplash_pineapple island.png" alt="">
-                </div>
-                <div class="text">
-                  <img src="./images/akar-icons_chevron-left.svg" alt="" class="left-arrow">
-                    <p>Pineapple Island is the most sought-after community in Ibadan that values an puts the needs of their clients first. It is a territory with loft complexes that creates a country life and homely feeling that is integrated with industrial development. A perfect, professional built abode that gives you the true taste of beauty and happiness.</p>
-                    <img src="./images/akar-icons_chevron-right.svg" alt="" class="right-arrow">
-                </div>
-            </div>
-        </section>
-      </main>
-
-      <!-- Choose Section -->
-
-      <section class="choose-section">
-        <div class="choose">
-            <div class="choose-text">
-                <h1>Why Choose Pineapple Island</h1>
-            </div>
-            <div class="choose-image-text">
-                <div class="text">
-                    <p>Pineapple Island is the most sought-after community in Ibadan that values and puts the needs of their clients first. It is a territory with loft complexes that creates a country life and homely feeling that is integrated with industrial development. A perfect, professional built abode that gives you the true taste of beauty and happiness.</p>
-                </div>
-                <div class="image">
-                    <img src="./images/unsplash_why choose pineapple island.png" alt="">
-                </div>
-            </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pineapple Island</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <script src="script.js"></script> -->
+  </head>
+  <body>
+    <header>
+      <section class="header">
+        <a href="index.html" class="logo">
+          <img src="./images/Pineapple Island-logo.svg" alt="" />
+        </a>
+        <nav class="navlinks">
+          <a href="#">About Us</a>
+          <a href="#">What we do</a>
+          <a href="#">Project</a>
+        </nav>
+        <a href="#" class="hamburger">
+          <img src="./images/hamburger.svg" alt="" />
+        </a>
+        <nav class="mobile-navlinks" id="mobilemenu">
+          <a href="#">About Us</a>
+          <a href="#">What we do</a>
+          <a href="#">Project</a>
+        </nav>
+        <div class="get-in-touch">
+          <a href="#">Get in Touch</a>
+        </div>
+      </section>
+    </header>
+    <main>
+      <section class="hero-section">
+        <div class="hero-background"></div>
+        <div class="hero-text">
+          <h1>Pineapple Island: GenZ and Millenial Abode</h1>
+          <p>
+            a community that gives you a taste of happiness, a place you’ll love
+            to live and an opportunity to build a home.
+          </p>
+          <div class="mobile-get-in-touch">
+            <a href="#">Get in Touch</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="./images/unsplash_Hero.png" alt="" />
+        </div>
+        <div class="mobile-hero-image">
+          <img src="./images/mobile-hero-image.png" alt="" />
         </div>
       </section>
 
+      <!-- About Section -->
 
-      <!-- Offers Section -->
-
-        <section class="offer-section">
-            <div class="offer-text">
-              <h3><span>What</span> Pineapple Lands Offers</h3>
-            </div>
-            <div class="offer1">
-                <div class="offer1-image">
-                    <img src="./images/unsplash_what_pineappl_lands_offers.png" alt="" class="offer1-img">
-                    <img src="./images/What_pinapple_land_offers_Background01.png" alt="" class="offer1-img2">
-                </div>
-                <div class="offer1-icon">
-                    <div class="icon">
-                        <img src="./images/fluent_tree-evergreen-20-regular.svg" alt="">
-                        <h5>Eco Friendly</h5>
-                    </div>
-                    <div class="icon">
-                        <img src="./images/ooui_network.svg" alt="">
-                        <h5>Smart Homes</h5>
-                    </div>
-                    <div class="icon">
-                         <img src="./images/ic_outline-payments.svg" alt="" >
-                        <h5>Good Rates</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="mobile-icon">
-              <img src="./images/unsplash_what_pineappl_lands_offers.png" alt="">
-                <div class="icons">
-                <div class="icn">
-                  <img src="./images/mobile-fluent_tree-evergreen-20-regular.svg" alt="">
-                  <p>Eco<br> Friendly</p>
-                </div>
-                <div class="icn">
-                  <img src="./images/mobile-ooui_network.svg" alt="">
-                  <p>Smart<br> Homes</p>
-                </div>
-                <div class="icn">
-                  <img src="./images/mobile-ic_outline-payments.svg" alt="">
-                  <p>Good<br> Rates</p>
-                </div>
-                <div class="icn">
-                  <img src="./images/mobile-icons8_services.svg" alt="">
-                  <p>Serviced<br> Apartment</p>
-                </div>
-                <div class="icn">
-                  <img src="./images/mobile-bytesize_lock.svg" alt="">
-                  <p>Private<br> Security</p>
-                </div>
-                <div class="icn">
-                  <img src="./images/mobile-emojione-monotone_light-bulb.svg" alt="">
-                  <p>24/7<br> Electricity</p>
-                </div>
-              </div>
-            </div>
-            <div class="offer2">
-                <div class="offer2-icon">
-                    <div class="icons2">
-                        <img src="./images/icons8_services.svg" alt="">
-                        <h5>Serviced Apartment</h5>
-                    </div>
-                    <div class="icons2">
-                        <img src="./images/bytesize_lock.svg" alt="">
-                        <h5>Private Security</h5>
-                    </div>
-                    <div class="icons2">
-                        <img src="./images/emojione-monotone_light-bulb.svg" alt="">
-                        <h5>24/7 Electricity</h5>
-                    </div>
-                </div>
-                <div class="offer2-image">
-                    <img src="./images/What_pinapple_land_offers_Background02.png" alt="" class="offer2-img2">
-                    <img src="./images/What_pinapple_land_offers02.png" alt="" class="offer2-img">
-                </div>
-            </div>
-      </section>
-
-      
-      <!-- Galleries Section -->
-
-      <section class="gallery-section">
-        <div class="gallery-text">
-            <h3>Available Homes</h3>
-            <h2>Galleries</h2>
-            <p>a community that gives you a taste of happiness, a place you'll love to live and an opportunity to build a home.</p>
+      <section class="about">
+        <div class="about-text">
+          <h1>
+            About<br />
+            Pineapple Island
+          </h1>
         </div>
-        <div class="galleries">
-            <img src="./images/Galleries_01.png" alt="" class="photo01">
-            <img src="./images/mobile-photo-01.png" alt="" class="mobile-photo-01">
-            <img src="./images/Galleries_02.png" alt="" class="photo02">
-            <img src="./images/Galleries_03.png" alt="" class="photo03">
-            <img src="./images/mobile-photo-02.png" alt="" class="mobile-photo-02">
-            <img src="./images/Galleries_04.png" alt="" class="photo04">
-            <img src="./images/Galleries_05.png" alt="" class="photo05">
-            <span class="photo-container">
-             <Span class="photo003">
-               <img src="./images/Galleries_06.png" alt="" >
-               <img src="./images/Galleries_05.png" alt="" >            
-              </Span>
-            </span>
-            <img src="./images/mobile-photo-03.png" alt="" class="mobile-photo-03">
-            <img src="./images/mobile-photo-04.png" alt="" class="mobile-photo-04">
-            <span class="photo-container">
-            <Span class="photo003">
-              <img src="./images/Galleries_07.png" alt="" >
-              <img src="./images/Galleries_08.png" alt="" >            
-             </Span>
-            </span>
-            <img src="./images/mobile-photo-05.png" alt="" class="mobile-photo-05">
-            <img src="./images/Galleries_04.png" alt="" class="photo004">
-            <img src="./images/Galleries_06.png" alt="" class="photo06">
-            <img src="./images/Galleries_07.png" alt="" class="photo07">
-            <img src="./images/Galleries_08.png" alt="" class="photo08">
-            <img src="./images/Galleries_09.png" alt="" class="photo09">   
-        </div>
-        <img src="./images/mobile-photo-06.png" alt="" class="mobile-photo-06">
-      </section>
-
-      <!-- Features Section -->
-
-      <section class="feature-section">
-        <div class="feature-image">
-            <img src="./images/Amazing_Features.png" alt="" class="img1">
-            <img src="./images/Amazing_Features_background.png" alt="" class="img2">
-        </div>
-        <div class="feature-text">
-            <h2>Amazing Features</h2>
-            <div class="features">
-               <div class="feature-P">
-                 <p>Lorem ipsum dolor sit amet, consectetur</p>
-                 <img src="./images/Vector.svg" alt="">
-               </div>
-               <div class="feature-Ps">
-                 <p>Lorem ipsum dolor sit amet, consectetur</p>
-                 <img src="./images/Vector.svg" alt="">
-               </div>
-               <div class="feature-P">
-                 <p>Lorem ipsum dolor sit amet, consectetur</p>
-                 <img src="./images/Vector.svg" alt="">
-               </div>
-               <div class="feature-Ps">
-                 <p>Lorem ipsum dolor sit amet, consectetur</p>
-                 <img src="./images/Vector.svg" alt="">
-               </div>
-               <div class="feature-P">
-                 <p>Lorem ipsum dolor sit amet, consectetur</p>
-                 <img src="./images/Vector.svg" alt="">
-               </div>
-               <div class="feature-Ps">
-                 <p>Lorem ipsum dolor sit amet, consectetur</p>
-                 <img src="./images/Vector.svg" alt="">
-               </div>
-               <div class="feature-P">
-                 <p>Lorem ipsum dolor sit amet, consectetur</p>
-                 <img src="./images/Vector.svg" alt="">
-               </div>
-               <div class="feature-Ps">
-                 <p>Lorem ipsum dolor sit amet, consectetur</p>
-                 <img src="./images/Vector.svg" alt="">
-               </div>
-               <div class="feature-P">
-                 <p>Lorem ipsum dolor sit amet, consectetur</p>
-                 <img src="./images/Vector.svg" alt="">
-               </div>
-               <div class="feature-Ps">
-                 <p>Lorem ipsum dolor sit amet, consectetur</p>
-                 <img src="./images/Vector.svg" alt="">
-               </div>
-            </div>
+        <div class="about-image">
+          <div class="image">
+            <img src="./images/unsplash_pineapple island.png" alt="" />
+          </div>
+          <div class="text">
+            <img
+              src="./images/akar-icons_chevron-left.svg"
+              alt=""
+              class="left-arrow"
+            />
+            <p>
+              Pineapple Island is the most sought-after community in Ibadan that
+              values an puts the needs of their clients first. It is a territory
+              with loft complexes that creates a country life and homely feeling
+              that is integrated with industrial development. A perfect,
+              professional built abode that gives you the true taste of beauty
+              and happiness.
+            </p>
+            <img
+              src="./images/akar-icons_chevron-right.svg"
+              alt=""
+              class="right-arrow"
+            />
+          </div>
         </div>
       </section>
+    </main>
 
-      <!-- Agent Section -->
+    <!-- Choose Section -->
 
-      <section class="agent-section">
-        <div class="agent-text">
-            <h2>Become An Agent</h2>
-            <p>a community that gives you a taste of happiness, a place you'll love to live and an opportunity to build a home.</p>
-            <a href="#">Join Now</a>
+    <section class="choose-section">
+      <div class="choose">
+        <div class="choose-text">
+          <h1>Why Choose Pineapple Island</h1>
         </div>
-        <div class="agent-image">
-            <img src="./images/Become_An_Agent_background.png" alt="" class="img2">
-            <img src="./images/Become_An_Agent.png" alt="" class="img1"> 
+        <div class="choose-image-text">
+          <div class="text">
+            <p>
+              Pineapple Island is the most sought-after community in Ibadan that
+              values and puts the needs of their clients first. It is a
+              territory with loft complexes that creates a country life and
+              homely feeling that is integrated with industrial development. A
+              perfect, professional built abode that gives you the true taste of
+              beauty and happiness.
+            </p>
+          </div>
+          <div class="image">
+            <img
+              src="./images/unsplash_why choose pineapple island.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Offers Section -->
+
+    <section class="offer-section">
+      <div class="offer-text">
+        <h3><span>What</span> Pineapple Lands Offers</h3>
+      </div>
+      <div class="offer1">
+        <div class="offer1-image">
+          <img
+            src="./images/unsplash_what_pineappl_lands_offers.png"
+            alt=""
+            class="offer1-img"
+          />
+          <img
+            src="./images/What_pinapple_land_offers_Background01.png"
+            alt=""
+            class="offer1-img2"
+          />
+        </div>
+        <div class="offer1-icon">
+          <div class="icon">
+            <img src="./images/fluent_tree-evergreen-20-regular.svg" alt="" />
+            <h5>Eco Friendly</h5>
+          </div>
+          <div class="icon">
+            <img src="./images/ooui_network.svg" alt="" />
+            <h5>Smart Homes</h5>
+          </div>
+          <div class="icon">
+            <img src="./images/ic_outline-payments.svg" alt="" />
+            <h5>Good Rates</h5>
+          </div>
+        </div>
+      </div>
+      <div class="mobile-icon">
+        <img src="./images/unsplash_what_pineappl_lands_offers.png" alt="" />
+        <div class="icons">
+          <div class="icn">
+            <img
+              src="./images/mobile-fluent_tree-evergreen-20-regular.svg"
+              alt=""
+            />
+            <p>
+              Eco<br />
+              Friendly
+            </p>
+          </div>
+          <div class="icn">
+            <img src="./images/mobile-ooui_network.svg" alt="" />
+            <p>
+              Smart<br />
+              Homes
+            </p>
+          </div>
+          <div class="icn">
+            <img src="./images/mobile-ic_outline-payments.svg" alt="" />
+            <p>
+              Good<br />
+              Rates
+            </p>
+          </div>
+          <div class="icn">
+            <img src="./images/mobile-icons8_services.svg" alt="" />
+            <p>
+              Serviced<br />
+              Apartment
+            </p>
+          </div>
+          <div class="icn">
+            <img src="./images/mobile-bytesize_lock.svg" alt="" />
+            <p>
+              Private<br />
+              Security
+            </p>
+          </div>
+          <div class="icn">
+            <img
+              src="./images/mobile-emojione-monotone_light-bulb.svg"
+              alt=""
+            />
+            <p>
+              24/7<br />
+              Electricity
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="offer2">
+        <div class="offer2-icon">
+          <div class="icons2">
+            <img src="./images/icons8_services.svg" alt="" />
+            <h5>Serviced Apartment</h5>
+          </div>
+          <div class="icons2">
+            <img src="./images/bytesize_lock.svg" alt="" />
+            <h5>Private Security</h5>
+          </div>
+          <div class="icons2">
+            <img src="./images/emojione-monotone_light-bulb.svg" alt="" />
+            <h5>24/7 Electricity</h5>
+          </div>
+        </div>
+        <div class="offer2-image">
+          <img
+            src="./images/What_pinapple_land_offers_Background02.png"
+            alt=""
+            class="offer2-img2"
+          />
+          <img
+            src="./images/What_pinapple_land_offers02.png"
+            alt=""
+            class="offer2-img"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Galleries Section -->
+
+    <section class="gallery-section">
+      <div class="gallery-text">
+        <h3>Available Homes</h3>
+        <h2>Galleries</h2>
+        <p>
+          a community that gives you a taste of happiness, a place you'll love
+          to live and an opportunity to build a home.
+        </p>
+      </div>
+      <div class="galleries">
+        <img src="./images/Galleries_01.png" alt="" class="photo01" />
+        <img
+          src="./images/mobile-photo-01.png"
+          alt=""
+          class="mobile-photo-01"
+        />
+        <img src="./images/Galleries_02.png" alt="" class="photo02" />
+        <img src="./images/Galleries_03.png" alt="" class="photo03" />
+        <img
+          src="./images/mobile-photo-02.png"
+          alt=""
+          class="mobile-photo-02"
+        />
+        <img src="./images/Galleries_04.png" alt="" class="photo04" />
+        <img src="./images/Galleries_05.png" alt="" class="photo05" />
+        <span class="photo-container">
+          <span class="photo003">
+            <img src="./images/Galleries_06.png" alt="" />
+            <img src="./images/Galleries_05.png" alt="" />
+          </span>
+        </span>
+        <img
+          src="./images/mobile-photo-03.png"
+          alt=""
+          class="mobile-photo-03"
+        />
+        <img
+          src="./images/mobile-photo-04.png"
+          alt=""
+          class="mobile-photo-04"
+        />
+        <span class="photo-container">
+          <span class="photo003">
+            <img src="./images/Galleries_07.png" alt="" />
+            <img src="./images/Galleries_08.png" alt="" />
+          </span>
+        </span>
+        <img
+          src="./images/mobile-photo-05.png"
+          alt=""
+          class="mobile-photo-05"
+        />
+        <img src="./images/Galleries_04.png" alt="" class="photo004" />
+        <img src="./images/Galleries_06.png" alt="" class="photo06" />
+        <img src="./images/Galleries_07.png" alt="" class="photo07" />
+        <img src="./images/Galleries_08.png" alt="" class="photo08" />
+        <img src="./images/Galleries_09.png" alt="" class="photo09" />
+      </div>
+      <img src="./images/mobile-photo-06.png" alt="" class="mobile-photo-06" />
+    </section>
+
+    <!-- Features Section -->
+
+    <section class="feature-section">
+      <div class="feature-image">
+        <img src="./images/Amazing_Features.png" alt="" class="img1" />
+        <img
+          src="./images/Amazing_Features_background.png"
+          alt=""
+          class="img2"
+        />
+      </div>
+      <div class="feature-text">
+        <h2>Amazing Features</h2>
+        <div class="features">
+          <div class="feature-P">
+            <p>Lorem ipsum dolor sit amet, consectetur</p>
+            <img src="./images/Vector.svg" alt="" />
+          </div>
+          <div class="feature-Ps">
+            <p>Lorem ipsum dolor sit amet, consectetur</p>
+            <img src="./images/Vector.svg" alt="" />
+          </div>
+          <div class="feature-P">
+            <p>Lorem ipsum dolor sit amet, consectetur</p>
+            <img src="./images/Vector.svg" alt="" />
+          </div>
+          <div class="feature-Ps">
+            <p>Lorem ipsum dolor sit amet, consectetur</p>
+            <img src="./images/Vector.svg" alt="" />
+          </div>
+          <div class="feature-P">
+            <p>Lorem ipsum dolor sit amet, consectetur</p>
+            <img src="./images/Vector.svg" alt="" />
+          </div>
+          <div class="feature-Ps">
+            <p>Lorem ipsum dolor sit amet, consectetur</p>
+            <img src="./images/Vector.svg" alt="" />
+          </div>
+          <div class="feature-P">
+            <p>Lorem ipsum dolor sit amet, consectetur</p>
+            <img src="./images/Vector.svg" alt="" />
+          </div>
+          <div class="feature-Ps">
+            <p>Lorem ipsum dolor sit amet, consectetur</p>
+            <img src="./images/Vector.svg" alt="" />
+          </div>
+          <div class="feature-P">
+            <p>Lorem ipsum dolor sit amet, consectetur</p>
+            <img src="./images/Vector.svg" alt="" />
+          </div>
+          <div class="feature-Ps">
+            <p>Lorem ipsum dolor sit amet, consectetur</p>
+            <img src="./images/Vector.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Agent Section -->
+
+    <section class="agent-section">
+      <div class="agent-text">
+        <h2>Become An Agent</h2>
+        <p>
+          a community that gives you a taste of happiness, a place you'll love
+          to live and an opportunity to build a home.
+        </p>
+        <a href="#">Join Now</a>
+      </div>
+      <div class="agent-image">
+        <img
+          src="./images/Become_An_Agent_background.png"
+          alt=""
+          class="img2"
+        />
+        <img src="./images/Become_An_Agent.png" alt="" class="img1" />
+      </div>
+    </section>
+
+    <!-- Form Section -->
+
+    <section class="form-section">
+      <div class="form-text">
+        <h2>Stay In Touch</h2>
+        <p>Are you curious about Pineapple Island? Send a message</p>
+      </div>
+      <form>
+        <input type="text" placeholder="Name" />
+        <input type="number" placeholder="Phone No" />
+        <input type="email" placeholder="Email" />
+        <input type="text" placeholder="Message" class="message" />
+        <a href="#">Send</a>
+      </form>
+    </section>
+
+    <!-- Footer Section -->
+
+    <footer>
+      <section class="footer">
+        <div class="footer-text">
+          <h4>Banana island</h4>
+          <p>
+            a community that gives you a taste of happiness, a place you’ll love
+            to live and an opportunity to build a home.
+          </p>
+        </div>
+        <div class="footer-form">
+          <h5>Follow up</h5>
+          <p>
+            Keep up with our newsletter to get updates about projects and offers
+          </p>
+          <form>
+            <input type="email" placeholder="Email" x />
+            <button>Subscribe</button>
+          </form>
         </div>
       </section>
+    </footer>
 
-
-      <!-- Form Section -->
-
-      <section class="form-section">
-        <div class="form-text">
-            <h2>Stay In Touch</h2>
-            <p>Are you curious about Pineapple Island? Send a message</p>
-        </div>
-        <form>
-            <input type="text"  placeholder="Name">
-            <input type="number"  placeholder="Phone No">
-            <input type="email"  placeholder="Email">
-            <input type="text"  placeholder="Message" class="message">
-            <a href="#">Send</a>
-        </form>
-      </section>
-
-
-      <!-- Footer Section -->
-       
-      <footer>
-        <section class="footer">
-            <div class="footer-text">
-                <h4>Banana island</h4>
-                <p>a community that gives you a taste of happiness, a place you’ll love to live and an opportunity to build a home.</p>
-            </div>
-            <div class="footer-form">
-                <h5>Follow up</h5>
-                <p>Keep up with our newsletter to get updates about projects and offers</p>
-                <form>
-                    <input type="email" placeholder="Email"x/>
-                    <button>Subscribe</button>
-                </form>
-            </div>
-        </section>
-      </footer>
-
-      <section class="mobile-footer">
-        <h3>Pineapple Island</h3>
-        <div class="link">
-          <img src="./images/emojione_copyright.svg" alt="">
-          <p>Copyright2021 Glowdsgn All Rights Reserved</p>
-        </div>
-      </section>
-    </body>
+    <section class="mobile-footer">
+      <h3>Pineapple Island</h3>
+      <div class="link">
+        <img src="./images/emojione_copyright.svg" alt="" />
+        <p>Copyright2021 Glowdsgn All Rights Reserved</p>
+      </div>
+    </section>
+  </body>
 </html>
